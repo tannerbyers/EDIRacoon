@@ -1,0 +1,2 @@
+1. Fix Env variable loading for cdk
+2. 
