@@ -3,12 +3,12 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import RacoonInSpaceImage from '../../assets/racoon_in_space.png';
+import RacoonInSpaceImage from '../../assets/racoon_in_space_no_bg.png';
 import AboutMe from '../../components/AboutMe/AboutMe';
 
 const LandingPage: React.FC = () => {
   return (
-    <div className="text-gray-100 bg-[#22212f] flex flex-col">
+    <div className="text-gray-100 bg-[#111827] flex flex-col">
       <section className="flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4 text-white">
@@ -61,9 +61,9 @@ const LandingPage: React.FC = () => {
                 </div>
               </section>
             </div>
-            <div className="flex-1 max-w-lg">
+            <div className="flex-1 max-w-lg pt-20">
               <img
-                className="w-full h-auto rounded-lg shadow-lg"
+                className="w-full h-auto rounded-lg"
                 src={RacoonInSpaceImage}
                 alt="Racoon in Space"
               />

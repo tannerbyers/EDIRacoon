@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 const NavBar: React.FC = () => {
   return (
     <nav className="bg-black p-4">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center space-x-4">
         <Link to="/" className="text-white text-2xl font-bold">
           <span className="text-orange-500">EDI</span> Raccoon
         </Link>
-        <div>
+        <div className="">
           <Link to="/" className="text-gray-200 hover:text-white px-4">
             Home
           </Link>

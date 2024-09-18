@@ -5,7 +5,7 @@ import TannerPic from '../../assets/tanner.jpg';
 
 const AboutMe: React.FC = () => {
   return (
-    <div className="bg-[#22212f] text-gray-100">
+    <div className="bg-[#111827] text-gray-100">
       <main className="container mx-auto px-4 py-12">
         <h1 className="text-3xl font-bold mb-8 text-white text-center">
           Who Made this?
