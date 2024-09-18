@@ -1,0 +1,85 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  background-color: #22212f; /* White background for a clean look */
+  color: #111827; /* Dark text for contrast */
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.bg-orange-500 {
+  background-color: #f97316; /* Orange color for buttons */
+}
+
+.bg-orange-400 {
+  background-color: #fb923c; /* Lighter orange for hover state */
+}
+
+.bg-black {
+  background-color: #000000; /* Black color for buttons */
+}
+
+.bg-gray-100 {
+  background-color: #f3f4f6; /* Light gray for card backgrounds */
+}
+
+.text-gray-700 {
+  color: #4b5563; /* Dark gray text for paragraphs */
+}
+
+.text-gray-400 {
+  color: #e2e8f0; /* Light gray text for footer */
+}
+
+.text-black {
+  color: #000000; /* Black text for emphasis */
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.space-x-4 > :not(:last-child) {
+  margin-right: 1rem;
+}
+
+.space-y-6 > :not(:last-child) {
+  margin-bottom: 1.5rem;
+}
