@@ -11,19 +11,20 @@ const AboutMe: React.FC = () => {
           Who Made this?
         </h1>
         <section className="bg-gray-800 p-6 rounded-md shadow-md">
-          <div className="flex items-center mb-6">
-            <img src={TannerPic} alt="Tanner Byers" className="w-1/6 p-4 m-4" />
-            <div className="ml-6">
+          <div className="flex flex-wrap items-center mb-6">
+            <div className="min-w-64 w-1/6">
+              <img src={TannerPic} alt="Tanner Byers" className="p-4 m-4" />
+            </div>
+            <div className="ml-6 w-2/3">
               <h2 className="text-2xl font-semibold mb-4 text-white">
                 Hey, I'm Tanner Byers
               </h2>
               <p className="mb-4">
-                With over 5 years of experience in cloud and full-stack
+                With 5ish years of experience in cloud and full-stack
                 development, I've had the privilege of working with some
-                incredible companies including AWS, Availity, Glidian, and
-                PayForTime. Each of these experiences has shaped my approach to
-                solving complex challenges and innovating in the technology
-                space.
+                incredible people at AWS, Availity, Glidian, and PayForTime.
+                Each of these experiences has shaped my approach to solving
+                complex challenges and innovating in the EDI space.
               </p>
               <p className="mb-4">
                 At AWS, I honed my skills in cloud services. My time at Availity
