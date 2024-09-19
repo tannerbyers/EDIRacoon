@@ -1,51 +1,46 @@
-const PricingPage= () => {
+const PricingPage = () => {
   return (
     <div className="pricing-page">
       <h1 className="text-center text-4xl font-bold">Pricing</h1>
       <p className="text-center text-lg mt-4">Choose the plan that fits your business needs.</p>
       
       <div className="pricing-table mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {/* Entry Plan */}
+        {/* Solo Plan */}
         <div className="pricing-card p-6 bg-white shadow-md rounded-md">
-          <h2 className="text-xl font-bold text-center">Entry</h2>
-          <p className="text-center text-2xl font-bold mt-4">$25/month</p>
-          <ul className="mt-4 space-y-2">
-            <li>100,000 transactions per month</li>
-            <li>25 GB of hot/warm storage</li>
-            <li>50 GB of cold storage</li>
-            <li>Additional storage: $0.015/GB (Hot/Warm), $0.005/GB (Cold)</li>
-            <li>Additional transactions: $1.00 per 1,000</li>
-            <li>Cold data query: $0.01 per query</li>
-            <li>Option to enable data deletion</li>
-          </ul>
-        </div>
-
-        {/* Growth Plan */}
-        <div className="pricing-card p-6 bg-white shadow-md rounded-md">
-          <h2 className="text-xl font-bold text-center">Growth</h2>
+          <h2 className="text-xl font-bold text-center">Solo</h2>
           <p className="text-center text-2xl font-bold mt-4">$50/month</p>
           <ul className="mt-4 space-y-2">
-            <li>250,000 transactions per month</li>
+            <li>100,000 transactions per month</li>
             <li>50 GB of hot/warm storage</li>
-            <li>100 GB of cold storage</li>
-            <li>Additional storage: $0.015/GB (Hot/Warm), $0.005/GB (Cold)</li>
-            <li>Additional transactions: $1.00 per 1,000</li>
-            <li>Cold data query: $0.01 per query</li>
+            <li>No cold storage available</li>
+            <li>Additional storage: $0.02/GB (Hot/Warm)</li>
+            <li>Additional transactions: $1.25 per 1,000</li>
             <li>Option to enable data deletion</li>
           </ul>
         </div>
 
-        {/* Pro Plan */}
+        {/* Startup Plan */}
         <div className="pricing-card p-6 bg-white shadow-md rounded-md">
-          <h2 className="text-xl font-bold text-center">Pro</h2>
-          <p className="text-center text-2xl font-bold mt-4">$100/month</p>
+          <h2 className="text-xl font-bold text-center">Startup</h2>
+          <p className="text-center text-2xl font-bold mt-4">$300/month</p>
           <ul className="mt-4 space-y-2">
-            <li>1,000,000 transactions per month</li>
-            <li>100 GB of hot/warm storage</li>
-            <li>500 GB of cold storage</li>
-            <li>Additional storage: $0.015/GB (Hot/Warm), $0.005/GB (Cold)</li>
+            <li>500,000 transactions per month</li>
+            <li>200 GB of hot/warm storage</li>
+            <li>Additional storage: $0.02/GB (Hot/Warm)</li>
             <li>Additional transactions: $1.00 per 1,000</li>
-            <li>Cold data query: $0.01 per query</li>
+            <li>Option to enable data deletion</li>
+          </ul>
+        </div>
+
+        {/* Small Corporation Plan */}
+        <div className="pricing-card p-6 bg-white shadow-md rounded-md">
+          <h2 className="text-xl font-bold text-center">Small Corporation</h2>
+          <p className="text-center text-2xl font-bold mt-4">$800/month</p>
+          <ul className="mt-4 space-y-2">
+            <li>2,000,000 transactions per month</li>
+            <li>1,000 GB of hot/warm storage</li>
+            <li>Additional storage: $0.02/GB (Hot/Warm)</li>
+            <li>Additional transactions: $0.85 per 1,000</li>
             <li>Option to enable data deletion</li>
           </ul>
         </div>
