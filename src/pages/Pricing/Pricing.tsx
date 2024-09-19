@@ -1,351 +1,81 @@
-// src/pages/PricingPage.tsx
 import React from 'react';
 
-import { Link } from 'react-router-dom';
-
-const PricingPage: React.FC = () => {
+const PricingPage= () => {
   return (
-    <div className="bg-gray-900 text-white min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-      <section className="bg-white dark:bg-gray-900">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-          <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-              Designed for business teams like yours
-            </h2>
-            <p className="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
-              Select the plan that aligns with your company's data needs and get
-              started with a streamlined EDI storage solution.
-            </p>
-          </div>
-          <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-            <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-              <h3 className="mb-4 text-2xl font-semibold">Starter</h3>
-              <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-                Best option for personal use & for your next project.
-              </p>
-              <div className="flex justify-center items-baseline my-8">
-                <span className="mr-2 text-5xl font-extrabold">$29</span>
-                <span className="text-gray-500 dark:text-gray-400">/month</span>
-              </div>
-
-              <ul role="list" className="mb-8 space-y-4 text-left">
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-orange-500 dark:text-orange-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>Up to 5TB of EDI transactions</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-orange-500 dark:text-orange-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>No setup, or hidden fees</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-orange-500 dark:text-orange-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>
-                    Team size:{" "}
-                    <span className="font-semibold">1 developer</span>
-                  </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-orange-500 dark:text-orange-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>
-                    Premium support:{" "}
-                    <span className="font-semibold">1 months</span>
-                  </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-orange-500 dark:text-orange-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>
-                    Free updates:{" "}
-                    <span className="font-semibold">6 months</span>
-                  </span>
-                </li>
-              </ul>
-              <Link
-                to={"/contact-us"}
-                className="text-white bg-orange-600 hover:bg-orange-700 focus:ring-4 focus:ring-orange-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-orange-900"
-              >
-                Sign Up for Beta!
-              </Link>
-            </div>
-
-            <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-              <h3 className="mb-4 text-2xl font-semibold">Company</h3>
-              <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-                Relevant for multiple users, extended & premium support.
-              </p>
-              <div className="flex justify-center items-baseline my-8">
-                <span className="mr-2 text-5xl font-extrabold">$99</span>
-                <span className="text-gray-500 dark:text-gray-400">/month</span>
-              </div>
-
-              <ul role="list" className="mb-8 space-y-4 text-left">
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-orange-500 dark:text-orange-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>Up to 50TB of EDI transactions</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-orange-500 dark:text-orange-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>No setup, or hidden fees</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-orange-500 dark:text-orange-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>
-                    Team size:{" "}
-                    <span className="font-semibold">Up to 5 developers</span>
-                  </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-orange-500 dark:text-orange-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>
-                    Premium support:{" "}
-                    <span className="font-semibold">3 months</span>
-                  </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-orange-500 dark:text-orange-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>
-                    Free updates:{" "}
-                    <span className="font-semibold">12 months</span>
-                  </span>
-                </li>
-              </ul>
-              <Link
-                to={"/contact-us"}
-                className="text-white bg-orange-600 hover:bg-orange-700 focus:ring-4 focus:ring-orange-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-orange-900"
-              >
-                Sign Up for Beta!
-              </Link>
-            </div>
-
-            <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-              <h3 className="mb-4 text-2xl font-semibold">Self Host</h3>
-              <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-                For those who want to do it themselves or dont want their data
-                leaving their aws account.
-              </p>
-              <div className="flex justify-center items-baseline my-8">
-                <span className="mr-2 text-5xl font-extrabold">$200</span>
-                <span className="text-gray-500 dark:text-gray-400">
-                  /one time
-                </span>
-              </div>
-
-              <ul role="list" className="mb-8 space-y-4 text-left">
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-orange-500 dark:text-orange-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>Individual configuration</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-orange-500 dark:text-orange-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>
-                    Lots of setup{" "}
-                    <span style={{ color: "orange" }}>
-                      (we do offer{" "}
-                      <a
-                        style={{ textDecoration: "underline" }}
-                        href={"programtanner@gmail.com"}
-                      >
-                        consulting
-                      </a>
-                      )
-                    </span>
-                  </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-orange-500 dark:text-orange-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>
-                    Team size: <span className="font-semibold">Unlimited</span>
-                  </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-orange-500 dark:text-orange-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>
-                    Premium support:{" "}
-                    <span className="font-semibold">0 months</span>
-                  </span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <svg
-                    className="flex-shrink-0 w-5 h-5 text-orange-500 dark:text-orange-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>
-                    Free updates:{" "}
-                    <span className="font-semibold">0 months</span>
-                  </span>
-                </li>
-              </ul>
-              <Link
-                to={"/contact-us"}
-                className="text-white bg-orange-600 hover:bg-orange-700 focus:ring-4 focus:ring-orange-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-orange-900"
-              >
-                Sign Up for Beta!
-              </Link>
-            </div>
-          </div>
+    <div className="pricing-page">
+      <h1 className="text-center text-4xl font-bold">Pricing</h1>
+      <p className="text-center text-lg mt-4">Choose the plan that fits your business needs.</p>
+      
+      <div className="pricing-table mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Entry Plan */}
+        <div className="pricing-card p-6 bg-white shadow-md rounded-md">
+          <h2 className="text-xl font-bold text-center">Entry</h2>
+          <p className="text-center text-2xl font-bold mt-4">$25/month</p>
+          <ul className="mt-4 space-y-2">
+            <li>100,000 transactions per month</li>
+            <li>25 GB of hot/warm storage</li>
+            <li>50 GB of cold storage</li>
+            <li>Additional storage: $0.015/GB (Hot/Warm), $0.005/GB (Cold)</li>
+            <li>Additional transactions: $1.00 per 1,000</li>
+            <li>Cold data query: $0.01 per query</li>
+            <li>Option to enable data deletion</li>
+          </ul>
         </div>
-      </section>
+
+        {/* Growth Plan */}
+        <div className="pricing-card p-6 bg-white shadow-md rounded-md">
+          <h2 className="text-xl font-bold text-center">Growth</h2>
+          <p className="text-center text-2xl font-bold mt-4">$50/month</p>
+          <ul className="mt-4 space-y-2">
+            <li>250,000 transactions per month</li>
+            <li>50 GB of hot/warm storage</li>
+            <li>100 GB of cold storage</li>
+            <li>Additional storage: $0.015/GB (Hot/Warm), $0.005/GB (Cold)</li>
+            <li>Additional transactions: $1.00 per 1,000</li>
+            <li>Cold data query: $0.01 per query</li>
+            <li>Option to enable data deletion</li>
+          </ul>
+        </div>
+
+        {/* Pro Plan */}
+        <div className="pricing-card p-6 bg-white shadow-md rounded-md">
+          <h2 className="text-xl font-bold text-center">Pro</h2>
+          <p className="text-center text-2xl font-bold mt-4">$100/month</p>
+          <ul className="mt-4 space-y-2">
+            <li>1,000,000 transactions per month</li>
+            <li>100 GB of hot/warm storage</li>
+            <li>500 GB of cold storage</li>
+            <li>Additional storage: $0.015/GB (Hot/Warm), $0.005/GB (Cold)</li>
+            <li>Additional transactions: $1.00 per 1,000</li>
+            <li>Cold data query: $0.01 per query</li>
+            <li>Option to enable data deletion</li>
+          </ul>
+        </div>
+
+        {/* Self-Hosted Option */}
+        <div className="pricing-card p-6 bg-white shadow-md rounded-md">
+          <h2 className="text-xl font-bold text-center">Self-Hosted</h2>
+          <p className="text-center text-2xl font-bold mt-4">Custom Pricing</p>
+          <ul className="mt-4 space-y-2">
+            <li>Host the solution on your own infrastructure</li>
+            <li>Full control over storage and costs</li>
+            <li>Custom integrations and deployment</li>
+            <li>Contact us for setup and support</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="mt-8">
+        <h2 className="text-center text-3xl font-bold">Data Retention Policy</h2>
+        <p className="text-center mt-4">
+          By default, your data is never deleted, ensuring you retain all historical transactions. However, we offer an
+          option to enable data deletion after a set period to help manage long-term storage costs.
+        </p>
+      </div>
+
+      <div className="mt-8 text-center">
+        <button className="px-6 py-3 bg-black text-white rounded-md">Contact Us for Custom Plans</button>
+      </div>
     </div>
   );
 };
